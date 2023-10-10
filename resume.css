@@ -1,0 +1,39 @@
+.sections {
+    display: flex;
+    justify-content: start;
+    margin: 10px 20px;
+    padding: 12px 2em;
+}
+
+.sections .container{
+    width: 80vw;
+    padding-left: 20px;
+}
+
+.certificates-n-testimonials .container{
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.certificates-n-testimonials{
+    padding-bottom: 3em;
+}
+.certificates-n-testimonials .container .right{
+flex-basis: 30vw;
+flex-grow: 1;
+}
+
+.certificates-n-testimonials .container .left{
+    flex-basis: initial;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .sections{
+        margin: 10px 0;
+        padding: 12px 0;
+    }
+}

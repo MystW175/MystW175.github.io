@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&family=Poppins:ital@0;1&display=swap');
+
+:root{
+    --primary-color: #7BA947;
+    --secondary-color:#c9e8e2;
+    --accent-color:#57a244;
+    --text-color-1: rgb(0, 0, 0);
+    --divider-color: #305327;
+    --background-color: white;
+    --body-text-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--body-text-color);
+}
+/* Some color preview ---> */
+ /* .header{
+    background-color: var(--accent-color);
+} */
+/* .footer{
+    background-color: #f6f6f6;
+}  */
+
+/* <--- some color preview */
+/* Darkmode --> */
+
+.darkmode{
+    --primary-color: rgb(170, 102, 239);
+    --background-color: rgb(36, 39, 44);
+    --text-color-1: rgb(255, 255, 255);
+    --text-color-2: black;
+    --divider-color: #6e6f6d;
+    --header-color: #121513;
+    --border-color: rgb(201, 196, 196);
+    --body-text-color: white;
+}
+.darkmode .header, .darkmode .footer{
+    background-color: var(--header-color);
+}
+
+.darkmode .content h1,
+ .darkmode .content h4,
+  .darkmode b{
+    color: rgb(170, 102, 239);
+}
+.darkmode .sections h3{
+    color: rgb(206, 176, 237);
+}
+.darkmode .content h4{
+    font-weight:lighter;
+}
+.darkmode .header i{
+    color: var(--primary-color);
+}
+.darkmode input, .darkmode textarea { 
+    background-color: #262323;
+    border-color: rgb(201, 196, 196) !important;
+}
+
+.darkmode .contact-icon .fa-envelope{
+    color: rgb(206, 176, 237) !important;
+} 
+/* <-- Darkmode */
+
+.header {
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:.8em 0;
+}
+.title {
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 2em;
+
+}
+.header .container ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+}
+.header .container a{
+    text-decoration: none;
+    color: var(--text-color-1);
+    font-family: 'Poppins', sans-serif ;
+}
+a.selected{
+    color: var(--primary-color);
+}
+.header .container a:hover{
+    color:var(--primary-color);
+    cursor: pointer;
+    transition: .2s ease;
+}
+.active {
+    color: var(--secondary-color);
+}
+.header .container ul li{
+    margin: 0 2vw;
+}
+.divider{
+    width: 94vw;
+    margin: 0 3vw;
+    border-top: .1px solid var(--divider-color);
+}
+.content {
+    box-sizing: border-box;
+    min-height: 86vh;
+}
+.footer {
+    min-height: 10vh;
+    padding-top: 10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1.6em;
+}
+.footer .container {
+    margin-right: 20px;
+}
+.footer p{
+    size: 16px;
+    padding:10px;
+}
+.icons{
+    flex-grow:1;
+    text-align: center;
+}
+.icons ul{
+    padding: 7px 10px;
+}
+.icons li{
+    display: inline;
+    padding: 0 15px;
+}
+.icons .icon{
+    font-size: 25px;
+    --fa-animation-iteration-count:1;
+}
+.icons .icon:hover{
+    color: var(--accent-color);
+    transition: color .2s;
+}
+
+/* This is the width of the sun icon */
+.header i{
+    width:15px;
+    margin-right: 15px;
+}
+.fa-bars{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left:0;
+    padding: 20px;
+}
+.fa-solid{
+    font-size: 25px;
+}
+.fa-facebook{
+    color:rgb(36, 113, 207);
+}
+.fa-youtube{
+    color:rgb(240, 63, 63);
+}
+.fa-square-instagram{
+    color:rgb(234, 30, 111);
+}
+.fa-discord{
+    color: rgb(82, 82, 205);
+}
+.fa-x-twitter{
+    color:black;
+}
+.fa-github{
+    color:rgb(33, 33, 33);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content{
+        padding: 0;
+    }
+    
+    /* .header .container{
+        position: absolute;
+        width: 125px;
+        height: 100%;
+        padding-left:20px;
+        padding-top: 20px;
+        top: 65px;
+        left: -145px;
+        background-color: var(--primary-color);
+        transition: all .3s ease-in-out;
+        z-index: 10;
+    } 
+    .header .container ul{
+
+        flex-direction: column;
+        gap: 2em;
+        
+    }
+    .fa-bars{
+        visibility: visible;
+    }
+    .open {
+        left: 0% !important;
+    } */ 
+    /* This is side menu */
+
+}
