@@ -1,7 +1,7 @@
 .profilepic {
     width: 190px;
     height: 190px;
-    background-image: url('/pfp.png');
+    background-image: url('pfp.png');
     background-position: center;
     background-size: cover;
     border-radius: 50%;
