@@ -50,6 +50,7 @@ input, textarea{
     padding: 0 10px;
     border-radius: 7px ;
     border: 1px solid var(--accent-color);
+    color: var(--body-text-color);
 }
 
 textarea{
