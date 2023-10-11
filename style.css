@@ -8,6 +8,7 @@
     --divider-color: #305327;
     --background-color: white;
     --body-text-color: black;
+    --shadow-color:#202e1d62;
 }
 * {
     margin: 0;
@@ -18,16 +19,9 @@
 body{
     background-color: var(--background-color);
     color: var(--body-text-color);
+    visibility: hidden;
 }
-/* Some color preview ---> */
- /* .header{
-    background-color: var(--accent-color);
-} */
-/* .footer{
-    background-color: #f6f6f6;
-}  */
 
-/* <--- some color preview */
 /* Darkmode --> */
 
 .darkmode{
@@ -39,6 +33,7 @@ body{
     --header-color: #121513;
     --border-color: rgb(201, 196, 196);
     --body-text-color: white;
+    --shadow-color:#794389;
 }
 .darkmode .header, .darkmode .footer{
     background-color: var(--header-color);
@@ -189,31 +184,4 @@ a.selected{
     .content{
         padding: 0;
     }
-    
-    /* .header .container{
-        position: absolute;
-        width: 125px;
-        height: 100%;
-        padding-left:20px;
-        padding-top: 20px;
-        top: 65px;
-        left: -145px;
-        background-color: var(--primary-color);
-        transition: all .3s ease-in-out;
-        z-index: 10;
-    } 
-    .header .container ul{
-
-        flex-direction: column;
-        gap: 2em;
-        
-    }
-    .fa-bars{
-        visibility: visible;
-    }
-    .open {
-        left: 0% !important;
-    } */ 
-    /* This is side menu */
-
 }
