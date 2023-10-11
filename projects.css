@@ -1,6 +1,3 @@
-:root{
-    --shadow-color:#ade3d8ba;
-}
 .content{
     display: flex;
     justify-content: center;
@@ -35,7 +32,6 @@
 .image{
     width: 255px;
     height: 190px;
-    background-color: var(--secondary-color);
     margin: 9px 8px;
     border-radius: 7px;
     
@@ -80,6 +76,7 @@
     width: 255px;
     text-align: justify;
     padding: 5px 8px;
+    padding-top: 10px;
     border-radius: 8px;
     box-sizing: border-box;
     overflow: hidden;
@@ -94,4 +91,39 @@
 
 .sections:last-of-type{
     padding-bottom: 40px;
+}
+
+.image{
+    background-position: center;
+    background-size: cover;
+}
+
+.website-1{
+    background-image: url('tea_and_coffee.png');
+}
+.website-2{
+    background-image: url('tiny_chess_bot.png');
+}
+.website-3{
+    background-image: url('mini_2d_game.png');
+}
+.game-1{
+    background-image: url('gravity.png');
+}
+.game-2{
+    background-image: url('dodge_blocks.png');
+}
+.game-3{
+    background-image: url('tower_defence.png');
+}
+
+.animation-1{
+    background-image: url('blender_donut.png');
+}
+
+.animation-2{
+    background-image: url('character_walk_cycle.png');
+}
+.animation-3{
+    background-image: url('memes.png');
 }
