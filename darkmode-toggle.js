@@ -1,17 +1,3 @@
-// $(".fa-moon").click(function () {
-
-//     $('*').toggleClass('darkmode');
-//     $(this).toggleClass('fa-moon fa-sun');
-
-//     });
-
-
-// $(".fa-bars").click(function () {
-//     $('.header .container').toggleClass('open');
-//     console.log('Clicked')
-// });
-
-
 let darkMode = localStorage.getItem("darkMode");
 
 
